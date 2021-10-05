@@ -7,4 +7,6 @@
     <dimen name="imageView_inset">-4dp</dimen>
     <dimen name="imageView_radius">18dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_beight_threeLine">88dp</dimen>
+    <dimen name="item_padding_vertical">16dp</dimen>
 </resources>
