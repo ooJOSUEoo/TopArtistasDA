@@ -43,15 +43,15 @@
                     android:layout_marginTop="?attr/actionBarSize">
 
                     <androidx.appcompat.widget.AppCompatImageView
-                        style="@style/AppTheme.ImageViewButton"
+                        style="@style/ImageViewButton"
                         android:id="@+id/imgDeleteFoto"
                         android:src="@drawable/ic_close_box"/>
                     <androidx.appcompat.widget.AppCompatImageView
-                        style="@style/AppTheme.ImageViewButton"
+                        style="@style/ImageViewButton"
                         android:id="@+id/imgFromGallery"
                         android:src="@drawable/ic_image"/>
                     <androidx.appcompat.widget.AppCompatImageView
-                        style="@style/AppTheme.ImageViewButton"
+                        style="@style/ImageViewButton"
                         android:id="@+id/imgFromUrl"
                         android:src="@drawable/ic_earth_box"/>
                 </LinearLayout>
