@@ -11,4 +11,9 @@
     <dimen name="item_padding_vertical">16dp</dimen>
     <dimen name="item_padding_horizontal">16dp</dimen>
     <dimen name="item_text_size_secondary">12sp</dimen>
+    
+    <dimen name="common_padding_nano">2dp</dimen>
+    <dimen name="common_padding_micro">4dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
 </resources>

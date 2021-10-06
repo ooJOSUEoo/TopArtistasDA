@@ -23,7 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddArtistActivity" />
+        <activity android:name=".AddArtistActivity"
+            android:label="@string/addArtist_title"/>
         <activity
             android:name=".DetalleActivity"
             android:label="@string/detalle_title"

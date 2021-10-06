@@ -30,4 +30,7 @@
     <string name="main_dialogDelete_message">¿Estas seguro de que deseas eliminar a %s?\nSe eliminará permanentemente.</string>
     <string name="main_message_delete_success">Artista eliminado correctamente.</string>
     <string name="main_message_delete_fail">El artista no ha sido eliminado correctamente.</string>
+    <string name="addArtist_title">Añadir artista</string>
+    <string name="addArtist_help_required">Requerido</string>
+    <string name="addArtist_help_estaturaMin">Estatura minima: 50cm</string>
 </resources>
