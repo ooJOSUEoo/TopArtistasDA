@@ -30,6 +30,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -59,6 +60,12 @@ public class AddArtistActivity extends AppCompatActivity implements DatePickerDi
     TextInputEditText etNotas;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
+    @BindView(R.id.tilNombre)
+    TextInputLayout tilNombre;
+    @BindView(R.id.tilApellidos)
+    TextInputLayout tilApellidos;
+    @BindView(R.id.tilEstatura)
+    TextInputLayout tilEstatura;
 
     private Artista mArtista;
     private Calendar mCalendar;
@@ -140,19 +147,25 @@ public class AddArtistActivity extends AppCompatActivity implements DatePickerDi
 
         if (etEstatura.getText() != null && (etEstatura.getText().toString().trim().isEmpty() ||
                 Integer.valueOf(etEstatura.getText().toString().trim()) < getResources().getInteger(R.integer.estatura_min)) ) {
-            etEstatura.setError(getString(R.string.addArtist_error_estaturaMin));
-            etEstatura.requestFocus();
+            tilEstatura.setError(getString(R.string.addArtist_error_estaturaMin));
+            tilEstatura.requestFocus();
             isValid = false;
+        }else {
+            tilEstatura.setError(null);
         }
         if (etApellidos.getText() != null && etApellidos.getText().toString().trim().isEmpty()) {
-            etApellidos.setError(getString(R.string.addArtist_error_required));
-            etApellidos.requestFocus();
+            tilApellidos.setError(getString(R.string.addArtist_error_required));
+            tilApellidos.requestFocus();
             isValid = false;
+        }else {
+            tilApellidos.setError(null);
         }
         if (etNombre.getText() != null && etNombre.getText().toString().trim().isEmpty()) {
-            etNombre.setError(getString(R.string.addArtist_error_required));
-            etNombre.requestFocus();
+            tilNombre.setError(getString(R.string.addArtist_error_required));
+            tilNombre.requestFocus();
             isValid = false;
+        }else {
+            tilNombre.setError(null);
         }
 
         return isValid;
