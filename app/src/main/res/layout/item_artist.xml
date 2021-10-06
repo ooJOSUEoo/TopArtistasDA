@@ -10,13 +10,26 @@
     android:focusable="true"
     android:background="?attr/selectableItemBackground">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgFoto"
         android:layout_width="@dimen/img_item_size"
-        android:layout_height="@dimen/img_item_size"
+        android:layout_height="80dp"
         android:src="@drawable/ic_account_box"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"/>
+        android:layout_marginStart="@dimen/item_padding_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/artist_hint_orden"
+        android:gravity="center"
+        android:textSize="@dimen/item_text_size_secondary"
+        android:layout_marginEnd="@dimen/item_padding_horizontal"
+        android:drawableBottom="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvNombre"
@@ -28,18 +41,6 @@
         android:layout_margin="@dimen/main_padding_small"
         android:layout_toEndOf="@id/imgFoto"
         android:layout_toStartOf="@+id/tvOrden"
-        android:layout_centerVertical="true"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvOrden"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/artist_hint_orden"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_margin="@dimen/main_padding_small"
-        android:drawableBottom="@drawable/ic_star"
-        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
