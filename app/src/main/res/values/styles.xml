@@ -31,5 +31,15 @@
         <item name="android:shadowColor">@android:color/black</item>
     </style>
 
+    <style name="ItemLarge" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="maxLines">1</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="ItemMedium" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="maxLines">2</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
 </resources>
 

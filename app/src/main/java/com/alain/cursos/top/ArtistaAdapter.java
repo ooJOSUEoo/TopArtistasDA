@@ -12,6 +12,7 @@ package com.alain.cursos.top;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -29,6 +30,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ArtistaAdapter extends RecyclerView.Adapter<ArtistaAdapter.ViewHolder> {
 
@@ -57,6 +59,7 @@ public class ArtistaAdapter extends RecyclerView.Adapter<ArtistaAdapter.ViewHold
         holder.setListener(artista, listener);
 
         holder.tvNombre.setText(artista.getNombreCompleto());
+        holder.tvNote.setText(artista.getNotas());
         holder.tvOrden.setText(String.valueOf(position+1));
 
         if (artista.getFotoUrl() != null){
@@ -93,13 +96,15 @@ public class ArtistaAdapter extends RecyclerView.Adapter<ArtistaAdapter.ViewHold
 
     class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.imgFoto)
-        AppCompatImageView imgFoto;
+        CircleImageView imgFoto;
         @BindView(R.id.tvNombre)
         AppCompatTextView tvNombre;
+        @BindView(R.id.tvNote)
+        AppCompatTextView tvNote;
         @BindView(R.id.tvOrden)
         AppCompatTextView tvOrden;
         @BindView(R.id.containerMain)
-        RelativeLayout containerMain;
+        ConstraintLayout containerMain;
 
         ViewHolder(View itemView) {
             super(itemView);
