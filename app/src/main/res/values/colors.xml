@@ -22,4 +22,5 @@
     <color name="color_on_error">#ffffff</color>
 
     <color name="color_divider">#1E000000</color>
+    <color name="color_transparent">#00F8F8F8</color>
 </resources>

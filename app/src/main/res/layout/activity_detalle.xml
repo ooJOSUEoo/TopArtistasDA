@@ -11,8 +11,7 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
-        android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
@@ -32,7 +31,6 @@
                     android:id="@+id/imgFoto"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/app_bar_height"
-                    android:background="@android:color/darker_gray"
                     android:src="@drawable/ic_photo_size_select_actual"/>
 
                 <LinearLayout
@@ -61,8 +59,9 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                android:background="@color/color_transparent"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                style="?toolbarStyle"/>
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -77,6 +76,6 @@
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         android:src="@drawable/ic_account_edit"
-        android:tint="@android:color/white"/>
+        style="@style/Widget.MaterialComponents.FloatingActionButton"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
