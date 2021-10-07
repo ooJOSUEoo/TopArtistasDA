@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#424242</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white_t">#88ffffff</color>
+    <color name="color_transparent">#00F8F8F8</color>
 
     <!--Material Theme Colors-->
     <color name="color_primary">#f48fb1</color>
@@ -22,5 +23,5 @@
     <color name="color_on_error">#ffffff</color>
 
     <color name="color_divider">#1E000000</color>
-    <color name="color_transparent">#00F8F8F8</color>
+
 </resources>
